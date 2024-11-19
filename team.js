@@ -76,10 +76,19 @@ exports.addTeam = (teamName, players) => {
 
 /**
  * Get a team from the database
- * @param {string} teamName - The name of the team
+ * @param {string} teamId - The UUID of the team
  * @returns {Object} - The team object
  * @returns {undefined} - If the team does not exist
  */
-exports.getTeam = (teamName) => {
-    return teams.get(teamName);
+exports.getTeam = (teamId) => {
+    console.log(teams.values());
+    return teams.get(teamId);
+}
+
+/**
+ * Clear the teams database
+ * @returns {void}
+ */
+exports.clearTeams = () => {
+    teams.clear();
 }

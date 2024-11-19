@@ -77,3 +77,11 @@ exports.getPlayers = () => {
 exports.getPlayer = (playerId) => {
     return players.get(playerId);
 }
+
+/**
+ * Clear the players database
+ * @returns {void}
+ */
+exports.clearPlayers = () => {
+    players.clear();
+}
