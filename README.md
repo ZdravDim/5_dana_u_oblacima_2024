@@ -15,6 +15,7 @@ Preduslov je imate instaliran Node.js (v20.15.1)
 Redosled komandi:
 
 -   `git clone https://github.com/ZdravDim/5_dana_u_oblacima_2024.git`
+-   `cd 5_dana_u_oblacima_2024`
 -   `npm install`
 
 ### Upustvo za pokretanje
