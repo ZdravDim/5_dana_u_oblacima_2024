@@ -35,7 +35,7 @@ const calculatePlayerRating = (hours) => {
  * @param {number} R2 - The second player's ELO rating.
  * @returns {number} - The expected ELO rating.
  */
-const caculateExpectedELO = (R1, R2) => {
+const calculateExpectedELO  = (R1, R2) => {
     return 1 / (1 + Math.pow(10, (R2 - R1) / 400));
 }
 
@@ -48,7 +48,7 @@ const caculateExpectedELO = (R1, R2) => {
  * @returns {number} - The new ELO rating.
  */
 const calculateNewELO = (R1, R2, K, S) => {
-    const E = caculateExpectedELO(R1, R2);
+    const E = calculateExpectedELO (R1, R2);
     return R1 + K * (S - E);
 }
 
